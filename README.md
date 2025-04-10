@@ -52,8 +52,42 @@ To verify the functionality of a demo e-commerce site using automated test cases
 ---
 
 # Project Structure
+saucedemo_capstone/
+│
+├── data/
+│   └── login_data.csv
+│
+├── pages/
+│   ├── base_page.py
+│   ├── login_page.py
+│   ├── inventory_page.py
+│   ├── cart_page.py
+│   ├── checkout_page.py
+│
+├── tests/
+│   ├── test_login_valid_users.py
+│   ├── test_login_invalid_user.py
+│   ├── test_logout.py
+│   ├── test_cart_visibility.py
+│   ├── test_random_product_fetch.py
+│   ├── test_add_products_to_cart.py
+│   ├── test_cart_verification.py
+│   ├── test_checkout_process.py
+│
+├── utils/
+│   ├── driver_factory.py
+│   ├── read_csv_data.py
+│
+├── screenshots/
+│   └── (generated at runtime)
+│
+├── reports/
+│   └── (pytest-html report will be stored here)
+│
+├── requirements.txt
+├── pytest.ini
+├── README.md
 
-saucedemo_capstone/ │ ├── data/ │ └── login_data.csv # DDT login data │ ├── pages/ # Page Object classes │ ├── base_page.py │ ├── login_page.py │ ├── inventory_page.py │ ├── cart_page.py │ └── checkout_page.py │ ├── tests/ # Test case scripts │ ├── test_1_login_valid_users.py │ ├── test_2_login_invalid_user.py │ ├── test_3_logout.py │ ├── test_4_cart_visibility.py │ ├── test_5_random_product_fetch.py │ ├── test_6_add_products_to_cart.py │ ├── test_7_cart_verification.py │ └── test_8_checkout_process.py │ ├── utils/ # Helpers and factories │ ├── driver_factory.py │ └── read_csv_data.py │ ├── screenshots/ # Checkout screenshots ├── reports/ # Pytest HTML reports ├── pytest.ini # Pytest configuration ├── requirements.txt # Python dependencies └── README.md
 
 
 ---
